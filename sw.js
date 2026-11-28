@@ -1,5 +1,5 @@
-const CACHE = 'ns-salary-slip-6688cfc172';
-const SHELL = ["/", "/assets/b-base-t.8a21acf940.css", "/assets/b-core-m.e868b37d3b.js", "/assets/b-store.53cfaac6df.js", "/assets/books.js?v=fefe7d77a5", "/assets/xlsx.js?v=8918149ae7", "/assets/tally.js?v=b0d7bd0579", "/assets/acct.js?v=9fb0bd38a9", "/assets/cashare.js?v=c7cf4d6b68", "/assets/caui.js?v=b89018e749", "/assets/rpcore.js?v=c80649591a", "/assets/pmforms.js?v=bc331e94da"];
+const CACHE = 'ns-salary-slip-3a92781d8b';
+const SHELL = ["/", "/assets/b-salbulk-t.b052a5d9fe.css", "/assets/b-core-m.e448276519.js", "/assets/b-store.7423f49a1c.js", "/assets/books.js?v=fefe7d77a5", "/assets/xlsx.js?v=1433e62b5b", "/assets/tally.js?v=b0d7bd0579", "/assets/acct.js?v=9fb0bd38a9", "/assets/cashare.js?v=c7cf4d6b68", "/assets/caui.js?v=b89018e749", "/assets/rpcore.js?v=c80649591a", "/assets/pmforms.js?v=bc331e94da"];
 const WARM = [], LGROUPS = [];
 const slow = () => { const c = self.navigator && navigator.connection; return !!c && (c.saveData || /2g/.test(c.effectiveType || '')); };
 const keep = (c, list) => Promise.allSettled(list.map(u => c.match(u).then(m => m || c.add(u))));

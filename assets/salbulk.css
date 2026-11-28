@@ -1,0 +1,16 @@
+/* the whole month's salary from Excel (salbulk.js, byof-salary 28 Nov 2026) */
+.slb-f{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:10px 14px;margin:6px 0 10px}
+.slb-f label,.slb-colgrid label{display:flex;flex-direction:column;gap:4px;font-size:.9rem;font-weight:600;min-width:0}
+.slb-f input,.slb-f select,.slb-colgrid select{width:100%;min-width:0;min-height:40px}
+[data-salbulk] .chk{display:inline-flex;align-items:center;gap:6px;margin:4px 14px 4px 0;font-size:.92rem}
+.slb-drop{margin-top:10px;padding:18px 12px;border:2px dashed var(--line);border-radius:12px;text-align:center;color:var(--muted,#64748b);cursor:pointer}
+.slb-drop.on,.slb-drop:focus-visible{border-color:var(--accent,#0f766e);background:color-mix(in srgb,var(--accent,#0f766e) 8%,transparent);outline:none}
+.slb-cols{margin:10px 0}.slb-cols summary,.bk-out details summary{cursor:pointer;font-weight:600;min-height:32px}
+.slb-colgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:8px 12px;margin:8px 0}
+.bk-out h4{margin:12px 0 4px;font-size:1rem}
+.slb-ferr{color:var(--warn,#b45309)}
+.slb-ch{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:12px;margin:12px 0}
+.slb-ch ul.rows{list-style:none;margin:6px 0 0;padding:0}.slb-ch ul.rows li{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:4px 0}
+@media print{[data-salbulk]{display:none!important}}
+.slb-ch ul.rows li b{white-space:nowrap;flex:none}.slb-ch ul.rows li span{min-width:0}
+[data-salbulk] .bk-t tr.ok,[data-salbulk] .bk-t tr.bad{color:inherit;font-weight:400}[data-salbulk] .bk-t th:first-child,[data-salbulk] .bk-t td:first-child{white-space:nowrap}
